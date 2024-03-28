@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\ArticleController;
+
 use Illuminate\Support\Facades\Route;
 
-Route::get('/',[ArticlesController::class,'index']);
 
-Route::get('/{id}',[ArticlesController::class,'show']);
+
+Route::resource("articles",ArticleController::class);

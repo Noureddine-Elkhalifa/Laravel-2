@@ -7,9 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    
-    @php
-        echo $article
-    @endphp
+        <form action="" method="POST">
+
+           <div class="form-group">
+                <label for="">ID</label>
+                <input type="number" name="id" id="id">
+           </div>
+
+
+        </form>
 </body>
 </html>
