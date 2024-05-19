@@ -14,6 +14,6 @@ class Telephone extends Model
 
     public function stagiaire()
     {
-        return $this->belongsTo(Stagiaire::class);
+        return $this->hasOne(Stagiaire::class);
     }
 }

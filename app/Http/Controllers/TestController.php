@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Filiere;
 use App\Models\Stagiaire;
 use App\Models\Telephone;
 use Illuminate\Http\Request;
@@ -12,15 +13,24 @@ class TestController extends Controller
 
     public function addStagiaireToPhone()
     {
-        $stagiaire = new Stagiaire();
-        $stagiaire -> nom = 'new';
-        $stagiaire -> prenom = 'new';
-        $stagiaire -> save();
+        // $telephone = new Telephone();
+        // $telephone -> numero = 'QQQ';
+        // $telephone -> save();
+
+        // $filier = Filiere::find(5);
+        
+
+        // $stagiaire = new Stagiaire();
+        // $stagiaire -> nom = 'new';
+        // $stagiaire -> prenom = 'new';
+       
+
+        // $stagiaire -> telephone()  -> associate($telephone);
+        // $stagiaire -> filiere() -> associate($filier);
+        // $stagiaire -> save();
 
 
-        $telephone = new Telephone();
-        $telephone -> numero = '06XXYYWW';
-
-        $stagiaire -> $telephone -> save($telephone);
+        $s = Stagiaire::find(6);
+        
     }
 }

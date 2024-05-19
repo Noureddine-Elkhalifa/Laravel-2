@@ -14,7 +14,7 @@ class Stagiaire extends Model
 
     public function telephone()
     {
-        return $this->hasOne(Telephone::class);
+        return $this->belongsTo(Telephone::class);
     }
 
     public function modules()
