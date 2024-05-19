@@ -29,8 +29,9 @@ class TestController extends Controller
         // $stagiaire -> filiere() -> associate($filier);
         // $stagiaire -> save();
 
+        
 
         $s = Stagiaire::find(6);
-        
+
     }
 }
