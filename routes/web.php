@@ -30,9 +30,9 @@ Route::get("/articles/search",[ArticlesController::class,"search"])->name("artic
 Route::post("/articles/find",[ArticlesController::class,"find"])->name('articles.find');
 Route::resource("articles",ArticlesController::class);
 
-Route::get('/client',[ClientController::class,'index']);
-Route::get('/clientsDetails/{id}',[ClientController::class,'show']) -> name('clientsDetails');
-Route::get('/commandeDetails/{id}',[CommandeController::class,'getCommandeDetails']) -> name('commandeDetails');
+// Route::get('/client',[ClientController::class,'index']);
+// Route::get('/clientsDetails/{id}',[ClientController::class,'show']) -> name('clientsDetails');
+// Route::get('/commandeDetails/{id}',[CommandeController::class,'getCommandeDetails']) -> name('commandeDetails');
 
 
 // Route::resource("articles",ArticleController::class);
